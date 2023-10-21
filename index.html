@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player |  Rescue Toilet-Head</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=480 height=640 style="width: 480px; height: 640px; background: #231F20"></canvas>
+    <script src="Build/html5.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/html5.data",
+        frameworkUrl: "Build/html5.framework.js",
+        codeUrl: "Build/html5.wasm",
+        symbolsUrl: "Build/html5.symbols.json",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Rescue Toilet-Head Cut",
+        productName: " Rescue Toilet-Head",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
